@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(206, 206, 206);
+    font-family: 'Cairo', sans-serif;
+    text-decoration: none;
+}
+.container{
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+    
+
+}
+@media (min-width: 768px){
+    .container {
+        width: 750px;
+    
+    } 
+} 
+
+@media (min-width: 992px){
+    .container {
+        width: 875px;
+    
+    } 
+} 
+
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    
+    } 
+} 
+
+
+    
+ul{
+    list-style-type: none;
+}
+
+header .container{
+  padding: 30px; 
+  
+}
+header{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    
+}
+header .container nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid red;
+    padding-bottom: 30px;
+    
+}
+header .container nav ul{
+    display: flex;
+    
+}
+header .container nav ul li{
+    padding-left: 20px;
+    font-size: 20px;
+    
+}
+header .container nav ul li.activite,
+header .container nav ul li:hover{
+    color: red;
+}
+
+
+.slider{
+   background-image: url("../img/slider.jpg");
+   height: 100vh;
+}
+.slider .text{
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    text-align: center;
+    width: 50%;
+    background-color: rgb(235, 50, 50);
+    padding: 30px;
+}
+
+.servic .text{
+    margin-top: 30px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.inner .container{
+    display: flex;
+margin-top: 30px;
+text-align: center;
+margin-bottom: 40px;
+flex-wrap: wrap;
+
+
+
+
+
+}
+.inner .container .text{
+    background-color: white;
+    width: 250px;
+    padding: 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin: 6px;
+    border-right: 1px solid rgb(91, 26, 243);
+        border-bottom:1px solid rgb(91, 26, 243) ;
+        box-shadow: rgb(106, 37, 235) 5px 5px 5px;
+        
+}
+.inner .container .text:hover{
+    transition:1s all 0.2s ease;
+   transform: translateY(-5px);
+    box-shadow:rgb(235, 37, 37) 5px 5px 5px ;
+}
+
+
+@media (min-width: 992px){
+    .inner .container .text{
+
+        width: calc(50%- 30px);
+        position: relative;
+        left: 30px;
+        
+        
+
+    } 
+    
+} 
+@media (min-width: 768px){
+    .inner .container .text{
+
+        width: calc(50%- 30px);
+        position: relative;
+        left: 50px;
+        
+        
+
+    } 
+    
+}
+@media (min-width: 576px){
+    .inner .container .text{
+
+        width: calc(50%- 30px);
+        position: relative;
+        left: 50px;
+        
+
+    } 
+    
+}
+@media (max-width: 575px){
+    .inner .container .text{
+
+        width: calc(100%- 30px);
+        position: relative;
+        left: 80px;
+        
+        
+        
+
+    } 
+    
+}
+
+footer .content{
+    display: flex;
+    background-color: rgb(75, 39, 238);
+    padding: 40px;
+    padding-left: 150px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+
+}
+footer .content .text{
+    width: 300px;
+    
+    margin-top: 15px;
+}
